@@ -77,15 +77,15 @@
         <div class="project-meta">
           <div class="project-meta-row">
             <span class="project-meta-label">Problem</span>
-            <span class="project-meta-value">Traditional recommendation systems miss semantic relationships between books; users need context-aware, emotion-based suggestions.</span>
+            <span class="project-meta-value">Traditional systems miss semantic relationships; users need emotion-based suggestions.</span>
           </div>
           <div class="project-meta-row">
             <span class="project-meta-label">Solution</span>
-            <span class="project-meta-value">Built semantic search engine using LangChain & HuggingFace transformers. Processed 5,197 book descriptions with vector embeddings in ChromaDB.</span>
+            <span class="project-meta-value">Semantic search using LangChain & HuggingFace. Processed 5,197 book descriptions with ChromaDB.</span>
           </div>
           <div class="project-meta-row">
             <span class="project-meta-label">Result</span>
-            <span class="project-meta-value">92% relevance accuracy, 80% sentiment precision. Deployed interactive Gradio app with sub-15ms response times and 93.8% author diversity.</span>
+            <span class="project-meta-value">92% relevance accuracy. Gradio app with sub-15ms response times.</span>
           </div>
         </div>
         <div class="project-tags"><span class="tag">LangChain</span><span class="tag">HuggingFace</span><span class="tag">ChromaDB</span><span class="tag">Gradio</span><span class="tag">NLP</span></div>
@@ -102,12 +102,10 @@
   vectorStore: ChromaDB
 })
 
-<span class="cm">// 7 emotion dimensions</span>
-emotions = [joy, fear, trust, ...]
-recommendations = engine.search(userQuery)
+emotions = [joy, fear, trust]
+recommendations = engine.search(query)
 
-<span class="kw">accuracy</span>: <span class="num">92</span>%
-<span class="kw">latency</span>: <span class="num">14</span>ms</pre>
+<span class="kw">accuracy</span>: <span class="num">92</span>%</pre>
       </div>
     </div>
 
@@ -119,15 +117,15 @@ recommendations = engine.search(userQuery)
         <div class="project-meta">
           <div class="project-meta-row">
             <span class="project-meta-label">Problem</span>
-            <span class="project-meta-value">Dental diagnoses require expert manual review, causing delays and inconsistencies.</span>
+            <span class="project-meta-value">Manual diagnosis causes delays and inconsistencies.</span>
           </div>
           <div class="project-meta-row">
             <span class="project-meta-label">Approach</span>
-            <span class="project-meta-value">Full-stack Django + PostgreSQL app with ResNet50 CNN trained on 10,000+ intraoral images.</span>
+            <span class="project-meta-value">Django + PostgreSQL with ResNet50 CNN on 10,000+ images.</span>
           </div>
           <div class="project-meta-row">
             <span class="project-meta-label">Result</span>
-            <span class="project-meta-value">91% detection accuracy. AWS deployment achieves sub-second response times.</span>
+            <span class="project-meta-value">91% accuracy. AWS deployment with sub-second response.</span>
           </div>
         </div>
         <div class="project-tags"><span class="tag">Django</span><span class="tag">ResNet50</span><span class="tag">TensorFlow</span><span class="tag">OpenCV</span><span class="tag">AWS</span></div>
@@ -136,7 +134,7 @@ recommendations = engine.search(userQuery)
         </div>
       </div>
       <div class="project-visual">
-        <pre><span class="cm">// CNN-based dental imaging</span>
+        <pre><span class="cm">// CNN dental imaging</span>
 
 <span class="kw">model</span> = ResNet50(pretrained=True)
 
@@ -147,8 +145,7 @@ recommendations = engine.search(userQuery)
   Recommend(Medicine)
 ]
 
-<span class="kw">accuracy</span>: <span class="num">91</span>%
-<span class="kw">latency</span>: <span class="num">0.8</span>s</pre>
+<span class="kw">accuracy</span>: <span class="num">91</span>%</pre>
       </div>
     </div>
 
@@ -156,19 +153,19 @@ recommendations = engine.search(userQuery)
     <div class="project-card reveal">
       <div class="project-info">
         <div class="project-number">03 — Web Development</div>
-        <h3 class="project-title">CreativeGrid: Artist Discovery Platform</h3>
+        <h3 class="project-title">CreativeGrid: Artist Discovery</h3>
         <div class="project-meta">
           <div class="project-meta-row">
             <span class="project-meta-label">Problem</span>
-            <span class="project-meta-value">Finding emerging artists online is fragmented; platforms lack unified discovery.</span>
+            <span class="project-meta-value">Finding artists is fragmented; no unified platform.</span>
           </div>
           <div class="project-meta-row">
             <span class="project-meta-label">Solution</span>
-            <span class="project-meta-value">Full-stack MERN with JWT auth, MongoDB integration, Artsy API. Kanban dashboard with drag-and-drop UI.</span>
+            <span class="project-meta-value">Full-stack MERN with JWT auth and MongoDB integration.</span>
           </div>
           <div class="project-meta-row">
             <span class="project-meta-label">Result</span>
-            <span class="project-meta-value">4 user states, seamless state persistence, cross-device responsive UI, real-time search.</span>
+            <span class="project-meta-value">Seamless state persistence, responsive UI, real-time search.</span>
           </div>
         </div>
         <div class="project-tags"><span class="tag">React</span><span class="tag">Node.js</span><span class="tag">MongoDB</span><span class="tag">JWT</span><span class="tag">Bootstrap</span></div>
@@ -180,8 +177,8 @@ recommendations = engine.search(userQuery)
         <pre><span class="cm">// Artist discovery stack</span>
 
 <span class="kw">const</span> app = {
-  frontend: React + TypeScript,
-  backend: Express + Node,
+  frontend: React,
+  backend: Express,
   database: MongoDB,
   auth: JWT
 }
@@ -197,19 +194,19 @@ recommendations = engine.search(userQuery)
     <div class="project-card reveal">
       <div class="project-info">
         <div class="project-number">04 — ML / Healthcare</div>
-        <h3 class="project-title">Medical Records & Clinical Decision Support</h3>
+        <h3 class="project-title">Medical Records & Clinical Support</h3>
         <div class="project-meta">
           <div class="project-meta-row">
             <span class="project-meta-label">Problem</span>
-            <span class="project-meta-value">Unstructured medical records limit clinical decision-making speed and accuracy.</span>
+            <span class="project-meta-value">Unstructured records limit decision-making.</span>
           </div>
           <div class="project-meta-row">
             <span class="project-meta-label">Solution</span>
-            <span class="project-meta-value">NLP pipeline (spaCy, NLTK) to process MIMIC-III dataset. Ensemble ML models for sepsis prediction.</span>
+            <span class="project-meta-value">NLP pipeline (spaCy, NLTK) on MIMIC-III with ensemble ML.</span>
           </div>
           <div class="project-meta-row">
             <span class="project-meta-label">Result</span>
-            <span class="project-meta-value">85% NER accuracy. 89% sepsis detection sensitivity with 24-48h advance warning.</span>
+            <span class="project-meta-value">85% NER accuracy. 89% sepsis detection with 24-48h lead time.</span>
           </div>
         </div>
         <div class="project-tags"><span class="tag">spaCy</span><span class="tag">NLTK</span><span class="tag">XGBoost</span><span class="tag">NLP</span><span class="tag">Healthcare</span></div>
@@ -218,15 +215,15 @@ recommendations = engine.search(userQuery)
         </div>
       </div>
       <div class="project-visual">
-        <pre><span class="cm">// Clinical NLP pipeline</span>
+        <pre><span class="cm">// Clinical NLP</span>
 
 <span class="kw">pipeline</span> = {
-  load: MIMIC_III(<span class="num">26</span> tables),
+  load: MIMIC_III,
   extract: spaCy_NER(),
   model: Ensemble(RF, XGBoost)
 }
 
-<span class="kw">sepsis_detection</span> {
+<span class="kw">results</span> {
   ner_accuracy: <span class="num">85</span>%,
   sensitivity: <span class="num">89</span>%
 }</pre>
@@ -237,19 +234,19 @@ recommendations = engine.search(userQuery)
     <div class="project-card reveal">
       <div class="project-info">
         <div class="project-number">05 — Game Development</div>
-        <h3 class="project-title">Morph Runner: Shape-Shifting 2D Game</h3>
+        <h3 class="project-title">Morph Runner: Shape-Shifting Game</h3>
         <div class="project-meta">
           <div class="project-meta-row">
             <span class="project-meta-label">Problem</span>
-            <span class="project-meta-value">Traditional endless runners lack innovative mechanics.</span>
+            <span class="project-meta-value">Traditional runners lack innovation.</span>
           </div>
           <div class="project-meta-row">
             <span class="project-meta-label">Solution</span>
-            <span class="project-meta-value">Unity-based 2D runner with shape-morphing mechanics and collision detection across 3 levels.</span>
+            <span class="project-meta-value">Unity 2D with shape-morphing mechanics and collision detection.</span>
           </div>
           <div class="project-meta-row">
             <span class="project-meta-label">Result</span>
-            <span class="project-meta-value">WebGL deployment with Firebase analytics tracking 40+ player sessions with Plotly dashboard.</span>
+            <span class="project-meta-value">WebGL deployment with Firebase analytics on 40+ players.</span>
           </div>
         </div>
         <div class="project-tags"><span class="tag">Unity</span><span class="tag">C#</span><span class="tag">Firebase</span><span class="tag">Python</span><span class="tag">Plotly</span></div>
@@ -258,7 +255,7 @@ recommendations = engine.search(userQuery)
         </div>
       </div>
       <div class="project-visual">
-        <pre><span class="cm">// Morph mechanics engine</span>
+        <pre><span class="cm">// Morph mechanics</span>
 
 <span class="kw">class</span> MorphRunner {
   shapes = [circle, square, triangle]
@@ -267,7 +264,7 @@ recommendations = engine.search(userQuery)
     Morph(nextShape)
   }
   
-  FirebaseEvent(<span class="str">player_death</span>)
+  FirebaseEvent(<span class="str">death</span>)
 }</pre>
       </div>
     </div>
@@ -280,15 +277,15 @@ recommendations = engine.search(userQuery)
         <div class="project-meta">
           <div class="project-meta-row">
             <span class="project-meta-label">Problem</span>
-            <span class="project-meta-value">Career counseling lacks data-driven insights; traditional assessments ignore dermatoglyphic patterns.</span>
+            <span class="project-meta-value">Career counseling lacks data-driven insights.</span>
           </div>
           <div class="project-meta-row">
             <span class="project-meta-label">Solution</span>
-            <span class="project-meta-value">Flask web app with AS608 optical fingerprint sensor. MobileNet V2 CNN trained on 30,000 fingerprint images.</span>
+            <span class="project-meta-value">Flask app with AS608 sensor. MobileNet V2 on 30,000 images.</span>
           </div>
           <div class="project-meta-row">
             <span class="project-meta-label">Result</span>
-            <span class="project-meta-value">85% classification accuracy. 2-minute report generation predicting career compatibility across 10+ fields.</span>
+            <span class="project-meta-value">85% accuracy. 2-minute reports across 10+ career fields.</span>
           </div>
         </div>
         <div class="project-tags"><span class="tag">MobileNet V2</span><span class="tag">OpenCV</span><span class="tag">Flask</span><span class="tag">SQLite</span></div>
@@ -297,16 +294,17 @@ recommendations = engine.search(userQuery)
         </div>
       </div>
       <div class="project-visual">
-        <pre><span class="cm">// Dermatoglyphic analysis</span>
+        <pre><span class="cm">// Dermatoglyphic</span>
 
 <span class="kw">model</span> = MobileNetV2(
-  classes=<span class="num">3</span> <span class="cm">// loop, arch, whorl</span>
+  classes=<span class="num">3</span>
 )
 
 <span class="kw">pipeline</span> = [
-  CaptureFingerprint(AS608),
-  ExtractMinutiae(scikit-image),
-  ClassifyPattern(MobileNet)
+  Capture(AS608),
+  Extract(scikit-image),
+  Classify(MobileNet),
+  Predict(careers)
 ]
 
 <span class="kw">accuracy</span>: <span class="num">85</span>%</pre>
@@ -316,30 +314,30 @@ recommendations = engine.search(userQuery)
     <!-- PROJECT 07 -->
     <div class="project-card reveal">
       <div class="project-info">
-        <div class="project-number">07 — Full Stack / Chrome Extension</div>
-        <h3 class="project-title">HireTracker: Job Application Management</h3>
+        <div class="project-number">07 — Full Stack / Extension</div>
+        <h3 class="project-title">HireTracker: Job Application Mgmt</h3>
         <div class="project-meta">
           <div class="project-meta-row">
             <span class="project-meta-label">Problem</span>
-            <span class="project-meta-value">Job seekers manually track applications across 8+ platforms; duplicates waste time.</span>
+            <span class="project-meta-value">Manual tracking across 8+ platforms wastes time.</span>
           </div>
           <div class="project-meta-row">
             <span class="project-meta-label">Solution</span>
-            <span class="project-meta-value">Chrome extension (Manifest V3) with DOM parsing. FastAPI backend with JWT auth and duplicate detection.</span>
+            <span class="project-meta-value">Chrome extension with DOM parsing. FastAPI backend with deduplication.</span>
           </div>
           <div class="project-meta-row">
             <span class="project-meta-label">Result</span>
-            <span class="project-meta-value">90% reduction in manual data entry. Kanban dashboard with analytics. 24 automated tests in CI/CD pipeline.</span>
+            <span class="project-meta-value">90% data reduction. Kanban dashboard. 24 automated tests.</span>
           </div>
         </div>
-        <div class="project-tags"><span class="tag">Chrome Extension</span><span class="tag">FastAPI</span><span class="tag">React</span><span class="tag">JWT</span><span class="tag">Kanban</span><span class="tag">Recharts</span></div>
+        <div class="project-tags"><span class="tag">Chrome Ext</span><span class="tag">FastAPI</span><span class="tag">React</span><span class="tag">JWT</span><span class="tag">Kanban</span><span class="tag">Recharts</span></div>
         <div class="project-links">
           <a href="#" target="_blank" class="project-link">GitHub →</a>
           <a href="#" target="_blank" class="project-link">Demo ↗</a>
         </div>
       </div>
       <div class="project-visual">
-        <pre><span class="cm">// Job tracking + deduplication</span>
+        <pre><span class="cm">// Job tracking</span>
 
 <span class="kw">extension</span> = {
   parser: DOM + JSON_LD,
@@ -348,10 +346,10 @@ recommendations = engine.search(userQuery)
 
 <span class="kw">api</span> = FastAPI {
   auth: JWT + bcrypt,
-  tests: <span class="num">24</span> automated
+  tests: <span class="num">24</span>
 }
 
-<span class="cm">// Manual entry reduction: 90%</span></pre>
+<span class="cm">// Reduction: 90%</span></pre>
       </div>
     </div>
 
@@ -370,10 +368,10 @@ recommendations = engine.search(userQuery)
       <div class="timeline-role">Software Development Engineer Intern</div>
       <div class="timeline-company">Solution Mediatech · Mumbai, India</div>
       <ul class="timeline-highlights">
-        <li>Boosted customer conversion rate by 15% by architecting responsive e-commerce platforms using React.js and Vite for 2,000+ monthly active shoppers</li>
-        <li>Optimized checkout flow, reducing cart abandonment by 10% and cutting checkout time from 25 to 12 seconds</li>
-        <li>Engineered distributed systems with AWS (EC2, S3, Lambda), reducing page load times by 30% for 500+ daily orders</li>
-        <li>Developed automated Power BI analytics pipeline processing 200+ daily transactions, improving forecast accuracy by 25%</li>
+        <li>Boosted customer conversion rate by 15% with responsive e-commerce platforms using React.js and Vite</li>
+        <li>Optimized checkout flow, reducing cart abandonment by 10% and cutting time from 25 to 12 seconds</li>
+        <li>Engineered AWS architecture (EC2, S3, Lambda), reducing page load times by 30%</li>
+        <li>Developed Power BI analytics pipeline, improving forecast accuracy by 25%</li>
       </ul>
     </div>
   </div>
@@ -484,7 +482,7 @@ recommendations = engine.search(userQuery)
   <div class="contact-inner reveal">
     <div class="section-label">/ Connect</div>
     <h2 class="section-title" style="margin-bottom: 1.5rem;">Let's build something together</h2>
-    <p class="contact-desc">I'm actively seeking full-time software engineering and ML roles starting May 2026. Open to conversations about interesting projects and opportunities.</p>
+    <p class="contact-desc">Actively seeking full-time roles in software engineering and ML starting May 2026. Always open to interesting projects and collaborations.</p>
     <div class="contact-links">
       <a href="mailto:bombe@usc.edu" class="contact-link">✉️ Email</a>
       <a href="https://www.linkedin.com/in/aditi-bombe/" target="_blank" class="contact-link">→ LinkedIn</a>
